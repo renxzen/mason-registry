@@ -14,3 +14,5 @@ jobs:
       contents: write
     steps:
       - uses: mason-org/actions/registry-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
